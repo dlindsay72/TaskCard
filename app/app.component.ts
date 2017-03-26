@@ -8,8 +8,15 @@ import { Task } from './model/task';
     templateUrl: 'app.component.html'
 })
 export class AppComponent {
-    task1: Task = {
-        content: "Learning Angular2",
-        completed: false
-    }
+    private tasks = [
+        new Task(
+            "Buy a monkey",
+            false
+        ),
+        new Task(
+            "Walk the turtle",
+            false
+        )
+    ]
+
  }
